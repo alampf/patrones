@@ -1,14 +1,15 @@
 class Agenda {
   final tareas = [
-    'Estudiar Dart',
-    'Hacer mis Hus',
-    'Preguntarle a chat como hacer un merge',
-    'Decirle a chat que haga mi tarea de ingles',
-    'Hacer UI de la app movil',
+    '\nEstudiar Dart',
+    '\nHacer mis Hus',
+    '\nPreguntarle a chat como hacer un merge',
+    '\nDecirle a chat que haga mi tarea de ingles',
+    '\nHacer UI de la app movil',
   ];
   
-  String? eliminada;
-  int? posicionAnterior;
+  // Guardan toda la informacion de la tarea eliminada
+  String? eliminada; // La tarea eliminada
+  int? posicionAnterior; // La posicion de la tarea en el arreglo
   
   void eliminar(int posicion) {
     eliminada = tareas.removeAt(posicion);
